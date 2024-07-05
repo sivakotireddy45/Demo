@@ -31,6 +31,8 @@ class MainActivity : AppCompatActivity() {
         // var webIntent :Intent = Intent(Intent.ACTION_VIEW,Uri.parse("http://www.google.com"))
         // startActivity(webIntent)
         startTimer(message = "motor", seconds = 3)
+        var hIntent = Intent(this,HomeActivity::class.java)
+        startActivity(hIntent)
     }
 
 
