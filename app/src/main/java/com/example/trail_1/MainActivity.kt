@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
         // startActivity(webIntent)
         startTimer(message = "motor", seconds = 3)
         var hIntent = Intent(this,HomeActivity::class.java)
+        hIntent.putExtra("nkey","siva-android")
         startActivity(hIntent)
     }
 
