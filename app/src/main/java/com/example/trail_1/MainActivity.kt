@@ -48,6 +48,8 @@ class MainActivity : AppCompatActivity() {
 
     fun myClickHandler(view: View) {
         Log.i("MainActivity","Button clicked")
+        var c =10+20
+        add(10,20)
         // var dialIntent:Intent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:987654398765"))
         var webIntent :Intent = Intent(Intent.ACTION_VIEW,Uri.parse("http://www.google.com"))
         startActivity(webIntent)
@@ -60,6 +62,23 @@ class MainActivity : AppCompatActivity() {
         startActivity(hIntent)
     }
 
+    private fun add(i: Int, i1: Int):Int {
+        var c = 20
+        var d = 20 * i
+        mul(5,4)
+        return i +i1
+
+    }
+
+    private fun mul(i: Int, i1: Int) {
+        val d = i * i1
+        div(6,3)
+
+    }
+
+    private fun div(i: Int, i1: Int) {
+        add(10,20)
+    }
 
     fun startTimer(message: String, seconds: Int) {
         val intent = Intent(AlarmClock.ACTION_SET_TIMER).apply {
